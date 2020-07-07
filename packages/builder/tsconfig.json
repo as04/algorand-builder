@@ -1,1 +1,15 @@
-../../tsconfig-project.json
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./build",
+    "paths": {
+      "@builder/*": ["./src/*"],
+      "@internal/*": ["./src/internal/*"]
+    }
+  },
+  "include": [
+    "src",
+    "../../@types"
+  ]
+}
